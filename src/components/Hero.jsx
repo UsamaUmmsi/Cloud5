@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import heroVideo from '../assets/vecteezy_a-laptop-computer-with-colorful-lights-on-it_52071088 (1) (1).mp4';
 
 const Hero = () => {
     const videoRef = useRef(null);
@@ -23,7 +24,7 @@ const Hero = () => {
                     className="absolute top-0 left-0 w-full h-full object-cover opacity-60"
                 >
                     {/* Compressed video source */}
-                    <source src="./src/assets/vecteezy_a-laptop-computer-with-colorful-lights-on-it_52071088 (1) (1).mp4" type="video/mp4" />
+                    <source src={heroVideo} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="absolute top-0 left-0 w-full h-full bg-black/50 backdrop-blur-[1px] z-10" />
